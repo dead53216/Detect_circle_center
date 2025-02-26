@@ -64,7 +64,7 @@ def process_image(frame):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     
     # 高斯模糊
-    blurred = cv2.GaussianBlur(gray, (9, 9), 2)
+    blurred = cv2.GaussianBlur(gray, (3, 3), 2)
     
     # Canny 邊緣檢測
     edges = cv2.Canny(blurred, 50, 150)
